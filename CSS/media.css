@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1016px) {
+    .conteiner{
+        width: 600px;
+        height: 280px;
+    }
+    .conteiner #paragrafo{
+        padding: 50px 50px 20px 50px;
+    }
+    .conteiner #paragrafo_2{
+        padding: 0px 50px 20px 50px;
+    }
+
+}
+@media only screen and (max-width: 810px) {
+    .conteiner{
+        width: 500px;
+        height: 300px;
+    }
+    .conteiner #paragrafo{
+        padding: 50px 20px 20px 50px;
+    }
+    .conteiner #paragrafo_2{
+        padding: 0px 50px 20px 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 616px) {
+    .conteiner{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 526px) {
+    .conteiner{
+        width: 350px;
+        height: 420px;
+    }
+}
+@media only screen and (max-width: 404px) {
+    .conteiner{
+        width: 300px;
+        height: 490px;
+    }
+}
+
+
+        /*LINGUAGENS DE PROGRAMAÇÃO*/
+
+@media only screen and (max-width: 1016px) {
+    .linguagens_de_programação{
+        width: 600px;
+        height: 150px;
+    }
+
+}
+@media only screen and (max-width: 810px) {
+    .linguagens_de_programação{
+        width: 500px;
+        height: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 616px) {
+    .linguagens_de_programação{
+        width: 500px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 526px) {
+    .linguagens_de_programação{
+        width: 350px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 404px) {
+    .linguagens_de_programação{
+        width: 300px;
+        height: 150px;
+    }
+
+    #paragrafo_3{
+        font-size: 17px;
+    }
+}
