@@ -1,0 +1,135 @@
+@media only screen and (max-width: 1024px) {
+    .linguagens {
+        margin: 50px 0 0 50px;
+    }
+    #paragrafo-1,
+    #paragrafo-2 {
+        margin: 30px 50px 0 50px;
+    }
+
+}
+
+@media only screen and (max-width: 866px) {
+    #conhecimento {
+        font-size: 20px;
+    }
+    #titulo-1 {
+        font-size: 22px;
+    }
+    .nav-bar li {
+        margin: 0 50px 0 -30px;
+    }
+    #paragrafo-1,
+    #paragrafo-2 {
+        margin: 30px 50px 0 50px;
+        flex-wrap: wrap;
+    }
+    .linguagens {
+        margin: 50px 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        display: none;
+        position: absolute;
+        transition: 1.0s;
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+
+    .menu.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #mobile-btn {
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 5px;
+        background: #2E3138;
+        color: wheat;
+    }
+
+    .nav {
+        width: 100%;  
+        height: 220px;
+        
+    }
+
+    .nav-bar {
+        width: 100%; 
+        height: 28rem;
+        
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .nav {
+        height: 250px;
+    }
+    .nav-bar {
+        height: 652px;
+    }
+
+    .nav-bar li {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .nav {
+        height: 250px;
+    }
+    .nav-bar {
+        height: 616px;
+    }
+
+    .nav-bar li {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .nav {
+        height: 250px;
+    }
+    .nav-bar {
+        height: 564px;
+    }
+
+    .nav-bar li {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .nav-bar {
+        height: 387px;
+    }
+
+    .nav-bar li {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .nav {
+        height: 250px;
+    }
+    .nav-bar {
+        height: 460px;
+    }
+
+    .nav-bar li {
+        margin: 0;
+    }
+}

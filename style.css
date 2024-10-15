@@ -1,0 +1,257 @@
+:root {
+    --background-color: rgb(29, 38, 45);
+    --text-color: rgb(255, 255, 255);
+    --secondary-background-color: rgb(46, 49, 56);
+    --tertiary-background-color: rgb(48, 55, 63);
+    --shadow-color: rgb(0, 0, 0);
+    --hover-color: rgb(0, 128, 0);
+    --instagram-color: rgb(255, 255, 255);
+    --facebook-color: rgb(24, 119, 242);
+    --linkedin-color: rgb(0, 119, 181);
+    --github-color: rgb(255, 255, 255);
+    --whatsapp-color: rgb(37, 211, 102);
+    --wheat-color: rgb(245, 222, 179);
+    --js-color: rgb(255, 255, 0);
+    --icon: rgb(24, 199, 242);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    display: flex;
+}
+title{
+    color: var(--icon);
+}
+
+main {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#titulo-1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: var(--text-color);
+    animation: pisca-h1 1.5s infinite;
+}
+
+@keyframes pisca-h1 {
+    0% {
+        opacity: 0;
+        color: var(--shadow-color);
+    }
+    100% {
+        opacity: 1;
+        color: var(--text-color);
+    }
+}
+
+main .nav p {
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+#midia {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.nav {
+    background: var(--secondary-background-color);
+    width: 100%;
+    height: 250px;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-color) 5px 0px 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+main img {
+    width: 100px;
+    height: 110px;
+    border-radius: 100%;
+    margin-top: 30px;
+    animation: loading 2.0s;
+}
+
+.nav-bar {
+    background: var(--tertiary-background-color);
+    width: 100%;
+    height: 520px;
+    box-shadow: var(--shadow-color) 5px 6px 15px;
+}
+
+.list {
+    margin: 20px 20px 0 0;
+    list-style: none;
+}
+
+.list a {
+    margin-left: -50%;
+    display: flex;
+    color: inherit;
+    text-decoration: dashed;
+    margin-top: 15px;
+    animation: rast 0.9s ease-in-out forwards;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li:hover {
+    color: var(--hover-color);
+    margin-right: 10px;
+    transition: 1s;
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+}
+
+@keyframes loading {
+    0%, 10% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    30% {
+        opacity: 30%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#inst {
+    animation: move 0.9s ease-in-out forwards;
+}
+
+#face {
+    animation: move 0.9s ease-in-out 0.7s forwards;
+}
+
+#link {
+    animation: move 0.9s ease-in-out 1.4s forwards;
+}
+
+#git {
+    animation: move 0.9s ease-in-out 2.1s forwards;
+}
+
+#cont {
+    animation: move 0.9s ease-in-out 2.8s forwards;
+}
+
+@keyframes move {
+    0% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: 63%;
+    }
+}
+
+.fa-instagram {
+    color: var(--instagram-color);
+    margin-right: 10px; 
+}
+
+.fa-facebook {
+    color: var(--facebook-color);
+    margin-right: 10px;
+}
+
+.fa-linkedin {
+    color: var(--linkedin-color);
+    margin-right: 10px;
+}
+
+.fa-github {
+    color: var(--github-color);
+    margin-right: 10px;
+}
+
+.fa-whatsapp {
+    color: var(--whatsapp-color); 
+    margin-right: 10px;
+}
+
+section {
+    width: 100%;
+}
+
+#sobre {
+    text-align: center;
+    margin-top: 10%;
+    color: var(--wheat-color);
+}
+
+#paragrafo-1,
+#paragrafo-2 {
+    color: var(--text-color);
+    margin: 30px 150px 0 150px;
+}
+
+.linguagens {
+    margin: 80px 0 0 150px;
+}
+
+#conhecimento {
+    color: var(--wheat-color);
+    font-size: 25px;
+}
+
+.fa-tasks {
+    margin-right: 10px;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.fa-js{
+    color: var(--js-color);
+    font-size: 2.5rem;
+    transition: font-size 0.3s ease-in-out, margin-top 0.6s ease-in-out;
+    margin-top: 20px;
+}
+
+.fa-database{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    transition: font-size 0.3s ease-in-out, margin-top 0.6s ease-in-out;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fa-js:hover{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.fa-database:hover{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
